@@ -1,0 +1,17 @@
+p.card-text {
+  text-align: justify;
+}
+
+.card img {
+  min-height: 354px;
+}
+
+#loader {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 540px) {
+  .input-group {
+    width: 100% !important;
+  }
+}

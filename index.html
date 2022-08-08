@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports DB</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container py-3">
+        <h3 class="text-center text-info mb-3">Find Your Favorite Player</h3>
+        <div class="input-group mb-3 d-flex w-75 mx-auto">
+            <input type="email" class="form-control" id="input-text" placeholder="Search your Favorite Player">
+            <button type="button" class="btn btn-info " onclick="searchPlayer()">Search Player</button>
+        </div>
+    </div>
+    <div class="container" id="error-display">
+
+    </div>
+
+    <!-- loader -->
+    <div class="d-flex justify-content-center" id="loader">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <br><br>
+    <!-- player details -->
+    <div class="container">
+        <div id="player-detail" class="row">
+        </div>
+    </div>
+
+    <!-- search player result -->
+    <div class="container">
+        <div id="players" class="row">
+
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
